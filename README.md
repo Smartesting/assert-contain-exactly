@@ -42,4 +42,4 @@ Extra elements were: [
 
 ## Notes
 
-This code is meant to be used for testing purposes. The algorithm is not that smart not designed to handle arrays with hundred of items.
+This code is meant to be used for testing purposes. The algorithm is not designed to handle arrays with hundred of items.
