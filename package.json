@@ -1,7 +1,7 @@
 {
   "author": "Smartesting",
   "name": "@smartesting/assert-contain-exactly",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "exports": "./dist/assertContainExactly.js",
   "types": "./dist/assertContainExactly.d.ts",
   "repository": {
