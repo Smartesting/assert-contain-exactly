@@ -16,7 +16,7 @@ describe("includesExactly", () => {
     assert.deepStrictEqual(result.extraElements, []);
   });
 
-  it("adds to `missingElements` the ones that were in the `expected`argument but not in the `actual` one", () => {
+  it("adds to `missingElements` the ones that were in the `expected` argument but not in the `actual` one", () => {
     const result = includesExactly(["a", "b"], ["a", "b", "c"]);
 
     assert.deepStrictEqual(result.missingElements, ["c"]);
