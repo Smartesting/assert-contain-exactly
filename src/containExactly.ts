@@ -1,4 +1,4 @@
-export default function includesExactly<T>(
+export default function containExactly<T>(
   actual: ReadonlyArray<T>,
   expected: ReadonlyArray<T>
 ): {

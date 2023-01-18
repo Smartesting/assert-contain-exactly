@@ -1,11 +1,11 @@
-import includesExactly from "./includesExactly";
+import containExactly from "./containExactly";
 import stringifyObject from "./stringifyObject";
 
-export default function assertIncludesExactly<T>(
+export default function assertContainExactly<T>(
   actual: ReadonlyArray<T>,
   expected: ReadonlyArray<T>
 ) {
-  const { missingElements, extraElements } = includesExactly(actual, expected);
+  const { missingElements, extraElements } = containExactly(actual, expected);
   if (missingElements.length > 0 || extraElements.length > 0) {
     const message = ["Expected arrays to contain the same objects:"];
 

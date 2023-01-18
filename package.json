@@ -1,6 +1,6 @@
 {
   "author": "Smartesting",
-  "name": "@smartesting/assert-includesexactly",
+  "name": "@smartesting/assert-contain-exactly",
   "scripts": {
     "build": "tsc",
     "test": "mocha",

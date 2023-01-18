@@ -1,14 +1,14 @@
 import assert from "assert";
-import assertIncludesExactly from "./assertIncludesExactly";
+import assertContainExactly from "./assertContainExactly";
 
-describe("assertIncludesExactly", () => {
+describe("assertContainExactly", () => {
   it("throws an Error when actual in not eactly included in expected", () => {
-    assert.throws(() => assertIncludesExactly(["a"], ["a", "b"]));
+    assert.throws(() => assertContainExactly(["a"], ["a", "b"]));
   });
 
   it("provides a helpful message when elements are missing", () => {
     assert.throws(
-      () => assertIncludesExactly(["a"], ["a", "b"]),
+      () => assertContainExactly(["a"], ["a", "b"]),
       new Error(
         [
           "Expected arrays to contain the same objects:",
@@ -20,7 +20,7 @@ describe("assertIncludesExactly", () => {
 
   it("provides a helpful message when there are extra elements", () => {
     assert.throws(
-      () => assertIncludesExactly(["a", "b"], ["a"]),
+      () => assertContainExactly(["a", "b"], ["a"]),
       new Error(
         [
           "Expected arrays to contain the same objects:",
@@ -32,7 +32,7 @@ describe("assertIncludesExactly", () => {
 
   it("provides a helpful message showing both missing and extra element", () => {
     assert.throws(
-      () => assertIncludesExactly(["a"], ["b"]),
+      () => assertContainExactly(["a"], ["b"]),
       new Error(
         [
           "Expected arrays to contain the same objects:",
@@ -56,7 +56,7 @@ describe("assertIncludesExactly", () => {
       },
     ];
     assert.throws(
-      () => assertIncludesExactly(actual, expected),
+      () => assertContainExactly(actual, expected),
       new Error(
         [
           "Expected arrays to contain the same objects:",
