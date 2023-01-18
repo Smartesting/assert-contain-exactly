@@ -1,9 +1,20 @@
 {
   "author": "Smartesting",
   "name": "@smartesting/assert-contain-exactly",
+  "description": "Simple test helper ensuring a list contains exactly the expected elements, without taking care of order.",
+  "categories": [
+    "Testing"
+  ],
+  "keywords": [
+    "test",
+    "assertion"
+  ],
   "version": "0.1.3",
   "exports": "./dist/assertContainExactly.js",
   "types": "./dist/assertContainExactly.d.ts",
+  "files": [
+    "/dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Smartesting/assert-contain-exactly.git"
