@@ -1,12 +1,16 @@
 {
   "author": "Smartesting",
   "name": "@smartesting/assert-contain-exactly",
+  "exports": "./dist/assertContainExactly.js",
+  "types": "./dist/assertContainExactly.d.ts",
   "scripts": {
     "build": "tsc",
+    "build:lib": "tsc --project tsconfig.lib.json",
     "test": "mocha",
     "prepare": "husky install",
     "prettier:check": "prettier --check .",
-    "prettier:write": "prettier --write ."
+    "prettier:write": "prettier --write .",
+    "prepublishOnly": "npm run build:lib && npm test"
   },
   "devDependencies": {
     "@types/assert": "^1.5.6",
